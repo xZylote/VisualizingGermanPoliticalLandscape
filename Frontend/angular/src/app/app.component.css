@@ -1,0 +1,17 @@
+/* We opt for a full-page layout */ 
+
+#header {
+    position: absolute;
+}
+
+#plot {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#settings {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}

@@ -1,0 +1,28 @@
+#loading {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  border: 10px solid black;
+  border-radius: 50%;
+  border-top-color: lightgrey;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+#tooltip {
+  border-radius: 4px;
+  display: none;
+  backdrop-filter: opacity(0.9) blur(20px);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color:white;
+  padding: 10px;
+  position: absolute;
+  z-index: 1000;
+  margin-left:10px;
+}
+.provinceElement {
+  z-index: -30;
+}

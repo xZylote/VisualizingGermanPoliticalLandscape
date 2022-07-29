@@ -1,0 +1,15 @@
+<div id="settings" class="form-check form-switch">
+    <input id="tooltips" (change)="foo('tooltips')" class="form-check-input" type="checkbox" checked>
+    <label class="form-check-label" for="tooltips">Tooltips</label>
+    <br>
+    <input id="lightness" (change)="foo('lightness')" class="form-check-input" type="checkbox" checked>
+    <label class="form-check-label" for="lightness">Lightness Encodes Sum of Variable Values</label>
+    <br>
+    <input id="saturation" (change)="foo('saturation')" class="form-check-input" type="checkbox" checked>
+    <label class="form-check-label" for="saturation">Auto-adjust Saturation</label>
+    <br>
+    <input id="intensity" (change)="bar('intensity')" class="form-control form-control-sm hide" type="number" min="0"
+        max="100" placeholder="Intensity (0-100)">
+    <input id="tolerance" (change)="bar('tolerance')" class="form-control form-control-sm hide" type="number"
+        placeholder="Tolerance (# Datapoints)">
+</div>

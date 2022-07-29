@@ -1,0 +1,10 @@
+#settings {
+    margin: 8px;
+}
+#tooltips {
+    cursor: pointer;
+}
+.hide {
+    width: 200px;
+    margin: 8px;
+}

@@ -1,0 +1,13 @@
+<div id="container">
+
+  <app-header id="header" [ready]="ready" [variables]="variables" (dataChange)="forwardSelection($event)"
+    (anaType)="forwardAna($event)"></app-header>
+
+  <app-map [settings]="settings" [anaType]="anaType" [selectedDataset]="selectedDataset" [highlight]="highlight"
+    (variables)="forwardVariables($event)" (plotData)="forwardData($event)" (ready)="forwardReady($event)">
+  </app-map>
+
+  <app-plot id="plot" [settings]="settings" [data]="data" (selectedHighlight)="forwardHighlight($event)"></app-plot>
+
+  <app-settings id="settings" (settings)="forwardSettings($event)"></app-settings>
+</div>
